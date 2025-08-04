@@ -1,0 +1,37 @@
+1. Why Data Structures and Algorithms Are Important:
+
+    Efficient data structures allow fast access, insertion, and deletion of inventory items.
+
+    Algorithms help manage inventory with minimum processing time, even when the data grows large.
+
+    For instance, if you have 10,000+ products, you need fast lookup by productId.
+
+
+2. Suitable Data Structures:
+
+    ArrayList:
+
+        Stores items in order.
+
+        Slower for search, update, and delete by ID (linear time).
+
+    HashMap (Map<Integer, Product>):
+
+        Key = productId, Value = Product
+
+        Offers O(1) time for add, update, delete, and search.
+
+
+3. Time Complexity
+
+    Add Product           O(1)
+    Update Product        O(1)
+    Delete Product        O(1)
+    Display Inventory     O(n)
+
+
+4. Optimizations
+
+    Use HashMap with productId as key for fast access.
+
+    If sorted order is needed , we can use TreeMap or PriorityQueue.
